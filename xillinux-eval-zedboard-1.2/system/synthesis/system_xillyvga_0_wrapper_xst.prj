@@ -1,0 +1,3 @@
+verilog xillyvga_v1_00_a F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\system\pcores\xillyvga_v1_00_a/hdl/verilog/xillyvga.v
+verilog xillyvga_v1_00_a F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\system\pcores\xillyvga_v1_00_a/hdl/verilog/xillyvga_core.v
+verilog work ../hdl/system_xillyvga_0_wrapper.v

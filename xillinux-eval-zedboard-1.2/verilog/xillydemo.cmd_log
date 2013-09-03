@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/verilog/xillydemo.xst" -ofn "F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/verilog/xillydemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../system/implementation -sd ../cores -sd ../runonce -nt timestamp -uc src/xillydemo.ucf -p xc7z020-clg484-1 xillydemo.ngc xillydemo.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 2 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o xillydemo_map.ncd xillydemo.ngd xillydemo.pcf 
+par -w -intstyle ise -ol high -mt off xillydemo_map.ncd xillydemo.ncd xillydemo.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml xillydemo.twx xillydemo.ncd -o xillydemo.twr xillydemo.pcf 
+bitgen -intstyle ise -f xillydemo.ut xillydemo.ncd 

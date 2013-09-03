@@ -1,0 +1,295 @@
+Release 14.6 ngdbuild P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: F:\Xilinx\ISE\14.6\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ../system/implementation -sd ../cores -sd ../runonce
+-nt timestamp -uc src/xillydemo.ucf -p xc7z020-clg484-1 xillydemo.ngc
+xillydemo.ngd
+
+Reading NGO file
+"F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/verilog/xilly
+demo.ngc" ...
+Loading design module "../runonce/fifo_32x512.ngc"...
+Loading design module "../runonce/fifo_8x2048.ngc"...
+Loading design module "../cores/xillybus_core.ngc"...
+Loading design module "../system/implementation/system.ngc"...
+Loading design module
+"../system/implementation/system_xillybus_0_wrapper.ngc"...
+Loading design module
+"../system/implementation/system_xillybus_lite_0_wrapper.ngc"...
+Loading design module
+"../system/implementation/system_processing_system7_0_wrapper.ngc"...
+Loading design module
+"../system/implementation/system_xillyvga_0_wrapper.ngc"...
+Loading design module "../cores/xillyvga_core.ngc"...
+Loading design module "../runonce/vga_fifo.ngc"...
+Loading design module
+"../system/implementation/system_axi_interconnect_0_wrapper.ngc"...
+Loading design module
+"../system/implementation/system_axi4lite_0_wrapper.ngc"...
+Loading design module
+"../system/implementation/system_axi_interconnect_1_wrapper.ngc"...
+Applying constraints in
+"../system/implementation/system_processing_system7_0_wrapper.ncf" to module
+"xillybus_ins/system_i/processing_system7_0"...
+Checking Constraint Associations...
+Applying constraints in
+"../system/implementation/system_axi_interconnect_0_wrapper.ncf" to module
+"xillybus_ins/system_i/axi_interconnect_0"...
+Checking Constraint Associations...
+Applying constraints in "../system/implementation/system_axi4lite_0_wrapper.ncf"
+to module "xillybus_ins/system_i/axi4lite_0"...
+Checking Constraint Associations...
+Applying constraints in
+"../system/implementation/system_axi_interconnect_1_wrapper.ncf" to module
+"xillybus_ins/system_i/axi_interconnect_1"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+INFO:NgdBuild:649 - Removing redundant 'IBUF' symbol 'PS_PORB_IBUF'.  All
+   constraints associated with this symbol will be ignored.
+INFO:NgdBuild:649 - Removing redundant 'IBUF' symbol 'PS_CLK_IBUF'.  All
+   constraints associated with this symbol will be ignored.
+INFO:NgdBuild:649 - Removing redundant 'IBUF' symbol 'PS_SRSTB_IBUF'.  All
+   constraints associated with this symbol will be ignored.
+
+Annotating constraints to design from ucf file "src/xillydemo.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:135 - Constraint <INST
+   /xillydemo/EXPANDED/xillydemo/xillybus_ins\/system_i/axi4lite_0/axi4lite_0\/s
+   i_converter_bank\/gen_conv_slot[0].clock_conv_inst\/interconnect_aresetn_resy
+   nc<2>_inv1_INV_0 TNM = FFS:axi4lite_0_...>: No instances of type FFS were
+   found under block
+   "xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[
+   0].clock_conv_inst/interconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP
+   axi_interconnect_0_reset_source = FFS PADS CPUS;>: CPUS "*" does not match
+   any design objects.
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP axi4lite_0_reset_source = FFS
+   PADS CPUS;>: CPUS "*" does not match any design objects.
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP
+   axi_interconnect_1_reset_source = FFS PADS CPUS;>: CPUS "*" does not match
+   any design objects.
+
+WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
+   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
+   actively used by any referencing constraint.
+
+INFO:ConstraintSystem:178 - TNM 'TN_gclk', used in period specification
+   'TS_gclk', was traced into PLLE2_ADV instance vga_clk_ins/vga_pll. The
+   following new TNM groups and period specifications were generated at the
+   PLLE2_ADV output(s): 
+   CLKOUT0: <TIMESPEC
+   TS_xillybus_ins_system_i_xillyvga_0_xillyvga_0_xillyvga_core_ins_vga_clk_ins_
+   clkout0 = PERIOD
+   "xillybus_ins_system_i_xillyvga_0_xillyvga_0_xillyvga_core_ins_vga_clk_ins_cl
+   kout0" TS_gclk / ...>
+
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'N210' has no driver
+WARNING:NgdBuild:452 - logical net 'N211' has no driver
+WARNING:NgdBuild:452 - logical net 'N212' has no driver
+WARNING:NgdBuild:452 - logical net 'N213' has no driver
+WARNING:NgdBuild:452 - logical net 'N214' has no driver
+WARNING:NgdBuild:452 - logical net 'N215' has no driver
+WARNING:NgdBuild:452 - logical net 'N216' has no driver
+WARNING:NgdBuild:452 - logical net 'N217' has no driver
+WARNING:NgdBuild:452 - logical net 'N218' has no driver
+WARNING:NgdBuild:452 - logical net 'N219' has no driver
+WARNING:NgdBuild:452 - logical net 'N220' has no driver
+WARNING:NgdBuild:452 - logical net 'N221' has no driver
+WARNING:NgdBuild:452 - logical net 'N222' has no driver
+WARNING:NgdBuild:452 - logical net 'N223' has no driver
+WARNING:NgdBuild:452 - logical net 'N224' has no driver
+WARNING:NgdBuild:452 - logical net 'N225' has no driver
+WARNING:NgdBuild:452 - logical net 'N226' has no driver
+WARNING:NgdBuild:452 - logical net 'N227' has no driver
+WARNING:NgdBuild:452 - logical net 'N228' has no driver
+WARNING:NgdBuild:452 - logical net 'N229' has no driver
+WARNING:NgdBuild:452 - logical net 'N230' has no driver
+WARNING:NgdBuild:452 - logical net 'N231' has no driver
+WARNING:NgdBuild:452 - logical net 'N232' has no driver
+WARNING:NgdBuild:452 - logical net 'N233' has no driver
+WARNING:NgdBuild:452 - logical net 'N234' has no driver
+WARNING:NgdBuild:452 - logical net 'N235' has no driver
+WARNING:NgdBuild:452 - logical net 'N236' has no driver
+WARNING:NgdBuild:452 - logical net 'N237' has no driver
+WARNING:NgdBuild:452 - logical net 'N238' has no driver
+WARNING:NgdBuild:452 - logical net 'N239' has no driver
+WARNING:NgdBuild:452 - logical net 'N240' has no driver
+WARNING:NgdBuild:452 - logical net 'N241' has no driver
+WARNING:NgdBuild:452 - logical net 'N242' has no driver
+WARNING:NgdBuild:452 - logical net 'N243' has no driver
+WARNING:NgdBuild:452 - logical net 'N244' has no driver
+WARNING:NgdBuild:452 - logical net 'N245' has no driver
+WARNING:NgdBuild:452 - logical net 'N246' has no driver
+WARNING:NgdBuild:452 - logical net 'N247' has no driver
+WARNING:NgdBuild:452 - logical net 'N248' has no driver
+WARNING:NgdBuild:452 - logical net 'N249' has no driver
+WARNING:NgdBuild:452 - logical net 'N250' has no driver
+WARNING:NgdBuild:452 - logical net 'N251' has no driver
+WARNING:NgdBuild:452 - logical net 'N252' has no driver
+WARNING:NgdBuild:452 - logical net 'N253' has no driver
+WARNING:NgdBuild:452 - logical net 'N254' has no driver
+WARNING:NgdBuild:452 - logical net 'N255' has no driver
+WARNING:NgdBuild:452 - logical net 'N256' has no driver
+WARNING:NgdBuild:452 - logical net 'N257' has no driver
+WARNING:NgdBuild:452 - logical net 'N258' has no driver
+WARNING:NgdBuild:452 - logical net 'N259' has no driver
+WARNING:NgdBuild:452 - logical net 'N260' has no driver
+WARNING:NgdBuild:452 - logical net 'N261' has no driver
+WARNING:NgdBuild:452 - logical net 'N262' has no driver
+WARNING:NgdBuild:452 - logical net 'N263' has no driver
+WARNING:NgdBuild:452 - logical net 'N264' has no driver
+WARNING:NgdBuild:452 - logical net 'N265' has no driver
+WARNING:NgdBuild:452 - logical net 'N266' has no driver
+WARNING:NgdBuild:452 - logical net 'N267' has no driver
+WARNING:NgdBuild:452 - logical net 'N268' has no driver
+WARNING:NgdBuild:452 - logical net 'N269' has no driver
+WARNING:NgdBuild:452 - logical net 'N270' has no driver
+WARNING:NgdBuild:452 - logical net 'N271' has no driver
+WARNING:NgdBuild:452 - logical net 'N272' has no driver
+WARNING:NgdBuild:452 - logical net 'N273' has no driver
+WARNING:NgdBuild:452 - logical net 'N274' has no driver
+WARNING:NgdBuild:452 - logical net 'N275' has no driver
+WARNING:NgdBuild:452 - logical net 'N276' has no driver
+WARNING:NgdBuild:452 - logical net 'N277' has no driver
+WARNING:NgdBuild:452 - logical net 'N278' has no driver
+WARNING:NgdBuild:452 - logical net 'N279' has no driver
+WARNING:NgdBuild:452 - logical net 'N280' has no driver
+WARNING:NgdBuild:452 - logical net 'N281' has no driver
+WARNING:NgdBuild:452 - logical net 'N282' has no driver
+WARNING:NgdBuild:452 - logical net 'N283' has no driver
+WARNING:NgdBuild:452 - logical net 'N284' has no driver
+WARNING:NgdBuild:452 - logical net 'N285' has no driver
+WARNING:NgdBuild:452 - logical net 'N286' has no driver
+WARNING:NgdBuild:452 - logical net 'N287' has no driver
+WARNING:NgdBuild:452 - logical net 'N288' has no driver
+WARNING:NgdBuild:452 - logical net 'N289' has no driver
+WARNING:NgdBuild:452 - logical net 'N290' has no driver
+WARNING:NgdBuild:452 - logical net 'N291' has no driver
+WARNING:NgdBuild:452 - logical net 'N292' has no driver
+WARNING:NgdBuild:452 - logical net 'N293' has no driver
+WARNING:NgdBuild:452 - logical net 'N294' has no driver
+WARNING:NgdBuild:452 - logical net 'N295' has no driver
+WARNING:NgdBuild:452 - logical net 'N296' has no driver
+WARNING:NgdBuild:452 - logical net 'N297' has no driver
+WARNING:NgdBuild:452 - logical net 'N298' has no driver
+WARNING:NgdBuild:452 - logical net 'N299' has no driver
+WARNING:NgdBuild:452 - logical net 'N300' has no driver
+WARNING:NgdBuild:452 - logical net 'N301' has no driver
+WARNING:NgdBuild:452 - logical net 'N302' has no driver
+WARNING:NgdBuild:452 - logical net 'N303' has no driver
+WARNING:NgdBuild:452 - logical net 'N304' has no driver
+WARNING:NgdBuild:452 - logical net 'N305' has no driver
+WARNING:NgdBuild:452 - logical net 'N306' has no driver
+WARNING:NgdBuild:452 - logical net 'N307' has no driver
+WARNING:NgdBuild:452 - logical net 'N308' has no driver
+WARNING:NgdBuild:452 - logical net 'N309' has no driver
+WARNING:NgdBuild:452 - logical net 'N310' has no driver
+WARNING:NgdBuild:452 - logical net 'N311' has no driver
+WARNING:NgdBuild:452 - logical net 'N312' has no driver
+WARNING:NgdBuild:452 - logical net 'N313' has no driver
+WARNING:NgdBuild:452 - logical net 'N314' has no driver
+WARNING:NgdBuild:452 - logical net 'N315' has no driver
+WARNING:NgdBuild:452 - logical net 'N316' has no driver
+WARNING:NgdBuild:452 - logical net 'N317' has no driver
+WARNING:NgdBuild:452 - logical net 'N318' has no driver
+WARNING:NgdBuild:452 - logical net 'N319' has no driver
+WARNING:NgdBuild:452 - logical net 'N320' has no driver
+WARNING:NgdBuild:452 - logical net 'N321' has no driver
+WARNING:NgdBuild:452 - logical net 'N322' has no driver
+WARNING:NgdBuild:452 - logical net 'N323' has no driver
+WARNING:NgdBuild:452 - logical net 'N324' has no driver
+WARNING:NgdBuild:452 - logical net 'N325' has no driver
+WARNING:NgdBuild:452 - logical net 'N326' has no driver
+WARNING:NgdBuild:452 - logical net 'N327' has no driver
+WARNING:NgdBuild:452 - logical net 'N328' has no driver
+WARNING:NgdBuild:452 - logical net 'N329' has no driver
+WARNING:NgdBuild:452 - logical net 'N330' has no driver
+WARNING:NgdBuild:452 - logical net 'N331' has no driver
+WARNING:NgdBuild:452 - logical net 'N332' has no driver
+WARNING:NgdBuild:452 - logical net 'N333' has no driver
+WARNING:NgdBuild:452 - logical net 'N334' has no driver
+WARNING:NgdBuild:452 - logical net 'N335' has no driver
+WARNING:NgdBuild:452 - logical net 'N336' has no driver
+WARNING:NgdBuild:452 - logical net 'N337' has no driver
+WARNING:NgdBuild:452 - logical net 'N338' has no driver
+WARNING:NgdBuild:452 - logical net 'N339' has no driver
+WARNING:NgdBuild:452 - logical net 'N340' has no driver
+WARNING:NgdBuild:452 - logical net 'N341' has no driver
+WARNING:NgdBuild:452 - logical net 'N342' has no driver
+WARNING:NgdBuild:452 - logical net 'N343' has no driver
+WARNING:NgdBuild:452 - logical net 'N344' has no driver
+WARNING:NgdBuild:452 - logical net 'N345' has no driver
+WARNING:NgdBuild:452 - logical net 'N346' has no driver
+WARNING:NgdBuild:452 - logical net 'N347' has no driver
+WARNING:NgdBuild:452 - logical net 'N348' has no driver
+WARNING:NgdBuild:452 - logical net 'N349' has no driver
+WARNING:NgdBuild:452 - logical net 'N350' has no driver
+WARNING:NgdBuild:452 - logical net 'N351' has no driver
+WARNING:NgdBuild:452 - logical net 'N352' has no driver
+WARNING:NgdBuild:452 - logical net 'N353' has no driver
+WARNING:NgdBuild:452 - logical net 'N354' has no driver
+WARNING:NgdBuild:452 - logical net 'N355' has no driver
+WARNING:NgdBuild:452 - logical net 'N356' has no driver
+WARNING:NgdBuild:452 - logical net 'N357' has no driver
+WARNING:NgdBuild:452 - logical net 'N358' has no driver
+WARNING:NgdBuild:452 - logical net 'N359' has no driver
+WARNING:NgdBuild:452 - logical net 'N360' has no driver
+WARNING:NgdBuild:452 - logical net 'N361' has no driver
+WARNING:NgdBuild:452 - logical net 'N362' has no driver
+WARNING:NgdBuild:452 - logical net 'N363' has no driver
+WARNING:NgdBuild:452 - logical net 'N364' has no driver
+WARNING:NgdBuild:452 - logical net 'N365' has no driver
+WARNING:NgdBuild:452 - logical net 'N366' has no driver
+WARNING:NgdBuild:452 - logical net 'N367' has no driver
+WARNING:NgdBuild:452 - logical net 'N368' has no driver
+WARNING:NgdBuild:452 - logical net 'N369' has no driver
+WARNING:NgdBuild:452 - logical net 'N370' has no driver
+WARNING:NgdBuild:452 - logical net 'N371' has no driver
+WARNING:NgdBuild:452 - logical net 'N372' has no driver
+WARNING:NgdBuild:452 - logical net 'N373' has no driver
+WARNING:NgdBuild:452 - logical net 'N374' has no driver
+WARNING:NgdBuild:452 - logical net 'N375' has no driver
+WARNING:NgdBuild:452 - logical net 'N376' has no driver
+WARNING:NgdBuild:452 - logical net 'N377' has no driver
+WARNING:NgdBuild:452 - logical net 'N378' has no driver
+WARNING:NgdBuild:452 - logical net 'N379' has no driver
+WARNING:NgdBuild:452 - logical net 'N380' has no driver
+WARNING:NgdBuild:452 - logical net 'N381' has no driver
+WARNING:NgdBuild:452 - logical net 'N382' has no driver
+WARNING:NgdBuild:452 - logical net 'N383' has no driver
+WARNING:NgdBuild:452 - logical net 'N384' has no driver
+WARNING:NgdBuild:452 - logical net 'N385' has no driver
+WARNING:NgdBuild:452 - logical net 'N386' has no driver
+WARNING:NgdBuild:452 - logical net 'N387' has no driver
+WARNING:NgdBuild:452 - logical net 'N388' has no driver
+WARNING:NgdBuild:452 - logical net 'N389' has no driver
+WARNING:NgdBuild:452 - logical net 'N390' has no driver
+WARNING:NgdBuild:452 - logical net 'N391' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 187
+
+Total memory usage is 181904 kilobytes
+
+Writing NGD file "xillydemo.ngd" ...
+Total REAL time to NGDBUILD completion:  43 sec
+Total CPU time to NGDBUILD completion:   39 sec
+
+Writing NGDBUILD log file "xillydemo.bld"...

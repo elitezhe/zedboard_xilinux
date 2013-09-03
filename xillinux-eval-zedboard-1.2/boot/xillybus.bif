@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+ [bootloader]zynq_fsbl_0.elf
+xillydemo.bit
+u-boot.elf
+}

@@ -1,0 +1,353 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\system\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_xillybus_0_wrapper_xst.prj"
+Verilog Include Directory          : {"F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\system\pcores\" "F:\Xilinx\ISE\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "F:\Xilinx\ISE\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system_xillybus_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_xillybus_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/pcores/xillybus_v1_00_a/hdl/verilog/xillybus.v" into library xillybus_v1_00_a
+Parsing module <xillybus>.
+Analyzing Verilog file "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\system\hdl\system_xillybus_0_wrapper.v" into library work
+Parsing module <system_xillybus_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <system_xillybus_0_wrapper>.
+
+Elaborating module <xillybus(C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=32,C_S_AXI_MIN_SIZE=32'b0111111111,C_USE_WSTRB=1,C_DPHASE_TIMEOUT=8,C_BASEADDR=32'b01010000000000000000000000000000,C_HIGHADDR=32'b01010000000000000000111111111111,C_SLV_AWIDTH=32,C_SLV_DWIDTH=32,C_M_AXI_ADDR_WIDTH=32,C_M_AXI_DATA_WIDTH=32,C_MAX_BURST_LEN=16,C_NATIVE_DATA_WIDTH=32)>.
+WARNING:HDLCompiler:1127 - "F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/pcores/xillybus_v1_00_a/hdl/verilog/xillybus.v" Line 153: Assignment to xillybus_M_AXI_ACLK ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/pcores/xillybus_v1_00_a/hdl/verilog/xillybus.v" Line 154: Assignment to xillybus_M_AXI_ARESETN ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_xillybus_0_wrapper>.
+    Related source file is "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\system\hdl\system_xillybus_0_wrapper.v".
+    Summary:
+	no macro.
+Unit <system_xillybus_0_wrapper> synthesized.
+
+Synthesizing Unit <xillybus>.
+    Related source file is "F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/pcores/xillybus_v1_00_a/hdl/verilog/xillybus.v".
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_M_AXI_ADDR_WIDTH = 32
+        C_M_AXI_DATA_WIDTH = 32
+        C_S_AXI_MIN_SIZE = 32'b00000000000000000000000111111111
+        C_USE_WSTRB = 1
+        C_DPHASE_TIMEOUT = 8
+        C_BASEADDR = 32'b01010000000000000000000000000000
+        C_HIGHADDR = 32'b01010000000000000000111111111111
+        C_SLV_AWIDTH = 32
+        C_SLV_DWIDTH = 32
+        C_MAX_BURST_LEN = 16
+        C_NATIVE_DATA_WIDTH = 32
+WARNING:Xst:647 - Input <m_axi_aclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <m_axi_aresetn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <rst_sync>.
+    Found 1-bit register for signal <xillybus_bus_rst_n>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <xillybus> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ 1-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_xillybus_0_wrapper> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_xillybus_0_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <system_xillybus_0_wrapper> :
+	Found 2-bit shift register for signal <xillybus_0/xillybus_bus_rst_n>.
+Unit <system_xillybus_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_xillybus_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 1
+#      FDE                         : 1
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               1  out of  106400     0%  
+ Number of Slice LUTs:                    1  out of  53200     0%  
+    Number used as Memory:                1  out of  17400     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      2
+   Number with an unused Flip Flop:       1  out of      2    50%  
+   Number with an unused LUT:             1  out of      2    50%  
+   Number of fully used LUT-FF pairs:     0  out of      2     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         660
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                     | Load  |
+-----------------------------------+-------------------------------------------+-------+
+xillybus_bus_clk                   | NONE(xillybus_0/Mshreg_xillybus_bus_rst_n)| 2     |
+-----------------------------------+-------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 1.303ns (Maximum Frequency: 767.460MHz)
+   Minimum input arrival time before clock: 0.007ns
+   Maximum output required time after clock: 0.282ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'xillybus_bus_clk'
+  Clock period: 1.303ns (frequency: 767.460MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.303ns (Levels of Logic = 0)
+  Source:            xillybus_0/Mshreg_xillybus_bus_rst_n (FF)
+  Destination:       xillybus_0/xillybus_bus_rst_n (FF)
+  Source Clock:      xillybus_bus_clk rising
+  Destination Clock: xillybus_bus_clk rising
+
+  Data Path: xillybus_0/Mshreg_xillybus_bus_rst_n to xillybus_0/xillybus_bus_rst_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRLC16E:CLK->Q        1   1.292   0.000  xillybus_0/Mshreg_xillybus_bus_rst_n (xillybus_0/Mshreg_xillybus_bus_rst_n)
+     FDE:D                     0.011          xillybus_0/xillybus_bus_rst_n
+    ----------------------------------------
+    Total                      1.303ns (1.303ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'xillybus_bus_clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.007ns (Levels of Logic = 0)
+  Source:            S_AXI_ARESETN (PAD)
+  Destination:       xillybus_0/Mshreg_xillybus_bus_rst_n (FF)
+  Destination Clock: xillybus_bus_clk rising
+
+  Data Path: S_AXI_ARESETN to xillybus_0/Mshreg_xillybus_bus_rst_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRLC16E:D                 0.007          xillybus_0/Mshreg_xillybus_bus_rst_n
+    ----------------------------------------
+    Total                      0.007ns (0.007ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'xillybus_bus_clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.282ns (Levels of Logic = 0)
+  Source:            xillybus_0/xillybus_bus_rst_n (FF)
+  Destination:       xillybus_bus_rst_n (PAD)
+  Source Clock:      xillybus_bus_clk rising
+
+  Data Path: xillybus_0/xillybus_bus_rst_n to xillybus_bus_rst_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.282   0.000  xillybus_0/xillybus_bus_rst_n (xillybus_0/xillybus_bus_rst_n)
+    ----------------------------------------
+    Total                      0.282ns (0.282ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 328 / 328
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            xillybus_S_AXI_RDATA<31> (PAD)
+  Destination:       S_AXI_RDATA<31> (PAD)
+
+  Data Path: xillybus_S_AXI_RDATA<31> to S_AXI_RDATA<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock xillybus_bus_clk
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+xillybus_bus_clk|    1.303|         |         |         |
+----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.44 secs
+ 
+--> 
+
+Total memory usage is 322280 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

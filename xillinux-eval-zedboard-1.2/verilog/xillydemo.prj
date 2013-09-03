@@ -1,0 +1,8 @@
+verilog work "src/xillybus_core.v"
+verilog work "src/system.v"
+verilog work "src/fifo_8x2048.v"
+verilog work "src/fifo_32x512.v"
+verilog work "src/xillybus.v"
+verilog work "src/smbus.v"
+verilog work "src/i2s_audio.v"
+verilog work "src/xillydemo.v"

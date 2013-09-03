@@ -1,0 +1,79 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'vga_fifo'...
+WARNING:sim - A core named 'vga_fifo' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'vga_fifo'...
+Delivering associated files for 'vga_fifo'...
+Delivering EJava files for 'vga_fifo'...
+Generating implementation netlist for 'vga_fifo'...
+INFO:sim - Pre-processing HDL files for 'vga_fifo'...
+WARNING:sim - BlackBox generator run option '-ifmt' found multiple times. Only
+   the first occurence is considered.
+Running synthesis for 'vga_fifo'
+Running ngcbuild...
+Writing VEO instantiation template for 'vga_fifo'...
+Writing Verilog instantiation wrapper for 'vga_fifo'...
+Writing Verilog behavioral simulation model for 'vga_fifo'...
+WARNING:sim - Overwriting existing file
+   F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp
+   /_cg/vga_fifo/doc/fifo_generator_v9_2_vinfo.html with file from view
+   xilinx_documentation
+Delivered 3 files into directory
+F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp/_c
+g/vga_fifo
+Delivered 1 file into directory
+F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp/_c
+g/vga_fifo
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'vga_fifo'...
+Generating metadata file...
+Generating ISE project file for 'vga_fifo'...
+Generating ISE project...
+XCO file found: vga_fifo.xco
+XMDF file found: vga_fifo_xmdf.tcl
+Adding
+F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp/_c
+g/vga_fifo.asy -view all -origin_type imported
+Adding
+F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp/_c
+g/vga_fifo.ngc -view all -origin_type created
+Checking file
+"F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp/_
+cg/vga_fifo.ngc" for project device match ...
+File
+"F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp/_
+cg/vga_fifo.ngc" device information matches project device.
+Adding
+F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp/_c
+g/vga_fifo.sym -view all -origin_type imported
+Adding
+F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp/_c
+g/vga_fifo.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tm
+   p/_cg/vga_fifo.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp/_c
+g/vga_fifo.veo -view all -origin_type imported
+Adding
+F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tmp/_c
+g/vga_fifo_synth.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/tm
+   p/_cg/vga_fifo_synth.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/vga_fifo"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'vga_fifo'.

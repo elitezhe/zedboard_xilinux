@@ -1,0 +1,13 @@
+set -tmpdir F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\system\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc7z020clg484-1
+-top system_xillybus_lite_0_wrapper
+-ifmt MIXED
+-ifn system_xillybus_lite_0_wrapper_xst.prj
+-ofn ../implementation/system_xillybus_lite_0_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}

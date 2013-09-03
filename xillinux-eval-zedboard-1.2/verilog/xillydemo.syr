@@ -1,0 +1,919 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: xillydemo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xillydemo.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "xillydemo"
+Output Format                      : NGC
+Target Device                      : xc7z020-1-clg484
+
+---- Source Options
+Top Module Name                    : xillydemo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/implementation" "F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/cores" "F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillybus_core.v" into library work
+Parsing module <xillybus_core>.
+Analyzing Verilog file "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\system.v" into library work
+Parsing module <system>.
+Analyzing Verilog file "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\fifo_8x2048.v" into library work
+Parsing module <fifo_8x2048>.
+Analyzing Verilog file "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\fifo_32x512.v" into library work
+Parsing module <fifo_32x512>.
+Analyzing Verilog file "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillybus.v" into library work
+Parsing module <xillybus>.
+Analyzing Verilog file "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\smbus.v" into library work
+Parsing module <smbus>.
+Analyzing Verilog file "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\i2s_audio.v" into library work
+Parsing module <i2s_audio>.
+Analyzing Verilog file "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillydemo.v" into library work
+Parsing module <xillydemo>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <xillydemo>.
+
+Elaborating module <xillybus>.
+
+Elaborating module <FDCE>.
+
+Elaborating module <system>.
+WARNING:HDLCompiler:1499 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\system.v" Line 1: Empty module <system> remains a black box.
+
+Elaborating module <xillybus_core>.
+WARNING:HDLCompiler:1499 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillybus_core.v" Line 1: Empty module <xillybus_core> remains a black box.
+WARNING:HDLCompiler:1127 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillydemo.v" Line 136: Assignment to user_r_mem_8_open ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillydemo.v" Line 142: Assignment to user_w_mem_8_open ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillydemo.v" Line 146: Assignment to user_mem_8_addr_update ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillydemo.v" Line 212: Assignment to user_wren ignored, since the identifier is never used
+
+Elaborating module <fifo_32x512>.
+WARNING:HDLCompiler:1499 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\fifo_32x512.v" Line 1: Empty module <fifo_32x512> remains a black box.
+
+Elaborating module <fifo_8x2048>.
+WARNING:HDLCompiler:1499 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\fifo_8x2048.v" Line 1: Empty module <fifo_8x2048> remains a black box.
+
+Elaborating module <i2s_audio>.
+WARNING:HDLCompiler:413 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\i2s_audio.v" Line 55: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\i2s_audio.v" Line 72: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\i2s_audio.v" Line 91: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\i2s_audio.v" Line 100: Result of 33-bit expression is truncated to fit in 32-bit target.
+WARNING:HDLCompiler:413 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\i2s_audio.v" Line 101: Result of 32-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <smbus>.
+WARNING:HDLCompiler:413 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\smbus.v" Line 87: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\smbus.v" Line 145: Result of 32-bit expression is truncated to fit in 3-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <xillydemo>.
+    Related source file is "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillydemo.v".
+INFO:Xst:3210 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillydemo.v" line 128: Output port <user_r_mem_8_open> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillydemo.v" line 128: Output port <user_w_mem_8_open> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillydemo.v" line 128: Output port <user_mem_8_addr_update> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillydemo.v" line 128: Output port <user_wren> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+    Found 32x8-bit single-port RAM <Mram_demoarray> for signal <demoarray>.
+    Found 32x8-bit single-port RAM <Mram_litearray0> for signal <litearray0>.
+    Found 32x8-bit single-port RAM <Mram_litearray1> for signal <litearray1>.
+    Found 32x8-bit single-port RAM <Mram_litearray2> for signal <litearray2>.
+    Found 32x8-bit single-port RAM <Mram_litearray3> for signal <litearray3>.
+    Found 8-bit register for signal <user_r_mem_8_data>.
+    Found 32-bit register for signal <user_rd_data>.
+    Summary:
+	inferred   5 RAM(s).
+	inferred  40 D-type flip-flop(s).
+Unit <xillydemo> synthesized.
+
+Synthesizing Unit <xillybus>.
+    Related source file is "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillybus.v".
+    Set property "IOB = TRUE" for instance <vga_iob_ff<0>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<1>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<2>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<3>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<4>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<5>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<6>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<7>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<8>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<9>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<10>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<11>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<12>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<13>>.
+    Set property "BOX_TYPE = user_black_box" for instance <system_i>.
+INFO:Xst:3210 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\xillybus.v" line 186: Output port <xillyvga_0_vga_de> of the instance <system_i> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <xillybus> synthesized.
+
+Synthesizing Unit <i2s_audio>.
+    Related source file is "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\i2s_audio.v".
+    Set property "IOB = TRUE" for signal <audio_mclk>.
+    Set property "IOB = TRUE" for signal <audio_dac>.
+    Set property "IOB = TRUE" for signal <audio_adc_reg>.
+    Set property "IOB = TRUE" for signal <audio_bclk_reg>.
+    Set property "IOB = TRUE" for signal <audio_lrclk_reg>.
+WARNING:Xst:647 - Input <quiesce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\i2s_audio.v" line 126: Output port <empty> of the instance <playback_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\i2s_audio.v" line 139: Output port <full> of the instance <record_fifo> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <audio_mclk>.
+    Found 1-bit register for signal <audio_adc_reg>.
+    Found 1-bit register for signal <audio_bclk_reg>.
+    Found 1-bit register for signal <audio_lrclk_reg>.
+    Found 2-bit register for signal <bclk_d>.
+    Found 1-bit register for signal <audio_lrclk_reg_d>.
+    Found 1-bit register for signal <fifo_rd_en>.
+    Found 16-bit register for signal <play_shreg>.
+    Found 1-bit register for signal <audio_dac>.
+    Found 1-bit register for signal <fifo_wr_en>.
+    Found 32-bit register for signal <record_shreg>.
+    Found 5-bit register for signal <record_count>.
+    Found 1-bit register for signal <write_when_done>.
+    Found 2-bit register for signal <clk_div>.
+    Found 2-bit adder for signal <clk_div[1]_GND_8_o_add_1_OUT> created at line 55.
+    Found 5-bit subtractor for signal <GND_8_o_GND_8_o_sub_11_OUT<4:0>> created at line 101.
+INFO:Xst:2774 - HDL ADVISOR - IOB property attached to signal audio_lrclk_reg may hinder XST clustering optimizations.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <i2s_audio> synthesized.
+
+Synthesizing Unit <smbus>.
+    Related source file is "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\smbus.v".
+        clk_freq = 150
+        st_idle = 0
+        st_start = 1
+        st_fetch = 2
+        st_bit0 = 3
+        st_bit1 = 4
+        st_bit2 = 5
+        st_ack0 = 6
+        st_ack1 = 7
+        st_ack2 = 8
+        st_stop0 = 9
+        st_stop1 = 10
+        st_stop2 = 11
+INFO:Xst:3210 - "F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\src\smbus.v" line 225: Output port <full> of the instance <fifo> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <sdata_sample>.
+    Found 1-bit register for signal <fifo_wr_en>.
+    Found 1-bit register for signal <open_d>.
+    Found 1-bit register for signal <stop_pending>.
+    Found 8-bit register for signal <write_byte>.
+    Found 1-bit register for signal <write_byte_valid>.
+    Found 12-bit register for signal <div_counter>.
+    Found 1-bit register for signal <pre_en>.
+    Found 1-bit register for signal <sclk_logic>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <sdata_logic>.
+    Found 1-bit register for signal <dir_write>.
+    Found 1-bit register for signal <first>.
+    Found 1-bit register for signal <save_direction>.
+    Found 3-bit register for signal <idx>.
+    Found 8-bit register for signal <read_byte>.
+    Found 1-bit register for signal <SMBus_en>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 30                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 8                                              |
+    | Clock              | bus_clk (rising_edge)                          |
+    | Reset              | quiesce (positive)                             |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit adder for signal <div_counter[11]_GND_9_o_add_5_OUT> created at line 87.
+    Found 3-bit subtractor for signal <GND_9_o_GND_9_o_sub_11_OUT<2:0>> created at line 145.
+    Found 1-bit 8-to-1 multiplexer for signal <idx[2]_write_byte[7]_Mux_8_o> created at line 126.
+    Found 1-bit tristate buffer for signal <smb_sclk> created at line 55
+    Found 1-bit tristate buffer for signal <smb_sdata> created at line 56
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred  17 Multiplexer(s).
+	inferred   2 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <smbus> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 32x8-bit single-port RAM                              : 5
+# Adders/Subtractors                                   : 4
+ 12-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 5-bit subtractor                                      : 1
+# Registers                                            : 32
+ 1-bit register                                        : 21
+ 12-bit register                                       : 1
+ 16-bit register                                       : 1
+ 2-bit register                                        : 2
+ 3-bit register                                        : 1
+ 32-bit register                                       : 2
+ 5-bit register                                        : 1
+ 8-bit register                                        : 3
+# Multiplexers                                         : 20
+ 1-bit 2-to-1 multiplexer                              : 15
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/fifo_32x512.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/fifo_8x2048.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/cores/xillybus_core.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/implementation/system.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/implementation/system_xillybus_0_wrapper.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/implementation/system_xillybus_lite_0_wrapper.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/implementation/system_processing_system7_0_wrapper.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/implementation/system_xillyvga_0_wrapper.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/cores/xillyvga_core.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/runonce/vga_fifo.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/implementation/system_axi_interconnect_0_wrapper.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/implementation/system_axi4lite_0_wrapper.ngc>.
+Reading core <F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/implementation/system_axi_interconnect_1_wrapper.ngc>.
+Loading core <fifo_32x512> for timing and area information for instance <fifo_32>.
+Loading core <fifo_8x2048> for timing and area information for instance <fifo_8>.
+Loading core <xillybus_core> for timing and area information for instance <xillybus_core_ins>.
+Loading core <system_xillybus_0_wrapper> for timing and area information for instance <xillybus_0>.
+Loading core <system_xillybus_lite_0_wrapper> for timing and area information for instance <xillybus_lite_0>.
+Loading core <system_processing_system7_0_wrapper> for timing and area information for instance <processing_system7_0>.
+Loading core <vga_fifo> for timing and area information for instance <vga_fifo_wrapper_ins/vga_fifo>.
+Loading core <xillyvga_core> for timing and area information for instance <xillyvga_0/xillyvga_core_ins>.
+Loading core <system_xillyvga_0_wrapper> for timing and area information for instance <xillyvga_0>.
+Loading core <system_axi_interconnect_0_wrapper> for timing and area information for instance <axi_interconnect_0>.
+Loading core <system_axi4lite_0_wrapper> for timing and area information for instance <axi4lite_0>.
+Loading core <system_axi_interconnect_1_wrapper> for timing and area information for instance <axi_interconnect_1>.
+Loading core <system> for timing and area information for instance <system_i>.
+Loading core <fifo_32x512> for timing and area information for instance <playback_fifo>.
+Loading core <fifo_32x512> for timing and area information for instance <record_fifo>.
+Loading core <fifo_8x2048> for timing and area information for instance <fifo>.
+
+Synthesizing (advanced) Unit <i2s_audio>.
+The following registers are absorbed into counter <clk_div>: 1 register on signal <clk_div>.
+The following registers are absorbed into counter <record_count>: 1 register on signal <record_count>.
+Unit <i2s_audio> synthesized (advanced).
+
+Synthesizing (advanced) Unit <smbus>.
+The following registers are absorbed into counter <div_counter>: 1 register on signal <div_counter>.
+The following registers are absorbed into counter <idx>: 1 register on signal <idx>.
+Unit <smbus> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xillydemo>.
+INFO:Xst:3231 - The small RAM <Mram_demoarray> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <bus_clk>       | rise     |
+    |     weA            | connected to signal <user_w_mem_8_wren> | high     |
+    |     addrA          | connected to signal <user_mem_8_addr> |          |
+    |     diA            | connected to signal <user_w_mem_8_data> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_litearray0> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <user_clk>      | rise     |
+    |     weA            | connected to signal <user_wstrb<0>> | high     |
+    |     addrA          | connected to signal <user_addr>     |          |
+    |     diA            | connected to signal <user_wr_data<7:0>> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_litearray1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <user_clk>      | rise     |
+    |     weA            | connected to signal <user_wstrb<1>> | high     |
+    |     addrA          | connected to signal <user_addr>     |          |
+    |     diA            | connected to signal <user_wr_data<15:8>> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_litearray2> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <user_clk>      | rise     |
+    |     weA            | connected to signal <user_wstrb<2>> | high     |
+    |     addrA          | connected to signal <user_addr>     |          |
+    |     diA            | connected to signal <user_wr_data<23:16>> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_litearray3> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <user_clk>      | rise     |
+    |     weA            | connected to signal <user_wstrb<3>> | high     |
+    |     addrA          | connected to signal <user_addr>     |          |
+    |     diA            | connected to signal <user_wr_data<31:24>> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <xillydemo> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 32x8-bit single-port distributed RAM                  : 5
+# Counters                                             : 4
+ 12-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 3-bit down counter                                    : 1
+ 5-bit down counter                                    : 1
+# Registers                                            : 141
+ Flip-Flops                                            : 141
+# Multiplexers                                         : 18
+ 1-bit 2-to-1 multiplexer                              : 15
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <smbus/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1011  | 1011
+ 1001  | 1001
+ 1010  | 1010
+-------------------
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_SRSTB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PS_SRSTB>
+   Output port PS7:PSSRSTB of instance <xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i>
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_CLK>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PS_CLK>
+   Output port PS7:PSCLK of instance <xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i>
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_PORB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PS_PORB>
+   Output port PS7:PSPORB of instance <xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i>
+
+Optimizing unit <xillydemo> ...
+
+Optimizing unit <xillybus> ...
+
+Optimizing unit <i2s_audio> ...
+WARNING:Xst:1710 - FF/Latch <smbus/div_counter_11> (without init value) has a constant value of 0 in block <xillydemo>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block xillydemo, actual ratio is 4.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <audio/record_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <audio/record_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <audio/playback_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <audio/playback_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo_32> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <fifo_32> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <smbus/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <smbus/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <fifo_8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo_8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <rd_arbiter_ins/rd_arb_roundrobin_2> in Unit <xillybus_ins/xillybus_core_ins> is equivalent to the following FF/Latch : <rd_arbiter_ins/rd_arb_roundrobin_2_1> 
+INFO:Xst:2260 - The FF/Latch <rd_arbiter_ins/rd_arb_roundrobin_1> in Unit <xillybus_ins/xillybus_core_ins> is equivalent to the following FF/Latch : <rd_arbiter_ins/rd_arb_roundrobin_1_1> 
+INFO:Xst:2260 - The FF/Latch <rd_arbiter_ins/rd_arb_roundrobin_0> in Unit <xillybus_ins/xillybus_core_ins> is equivalent to the following 2 FFs/Latches : <rd_arbiter_ins/rd_arb_roundrobin_0_1> <rd_arbiter_ins/rd_arb_roundrobin_0_2> 
+INFO:Xst:2260 - The FF/Latch <pre_user_wren> in Unit <xillybus_lite_0> is equivalent to the following FF/Latch : <pre_user_wren_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <audio/record_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <audio/record_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <audio/playback_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <audio/playback_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo_32> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <fifo_32> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <smbus/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <smbus/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <fifo_8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo_8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <rd_arbiter_ins/rd_arb_roundrobin_2> in Unit <xillybus_ins/xillybus_core_ins> is equivalent to the following FF/Latch : <rd_arbiter_ins/rd_arb_roundrobin_2_1> 
+INFO:Xst:2260 - The FF/Latch <rd_arbiter_ins/rd_arb_roundrobin_1> in Unit <xillybus_ins/xillybus_core_ins> is equivalent to the following FF/Latch : <rd_arbiter_ins/rd_arb_roundrobin_1_1> 
+INFO:Xst:2260 - The FF/Latch <rd_arbiter_ins/rd_arb_roundrobin_0> in Unit <xillybus_ins/xillybus_core_ins> is equivalent to the following 2 FFs/Latches : <rd_arbiter_ins/rd_arb_roundrobin_0_1> <rd_arbiter_ins/rd_arb_roundrobin_0_2> 
+INFO:Xst:2260 - The FF/Latch <pre_user_wren> in Unit <xillybus_lite_0> is equivalent to the following FF/Latch : <pre_user_wren_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> 
+INFO:Xst:2260 - The FF/Latch <pre_user_wren> in Unit <xillybus_lite_0> is equivalent to the following FF/Latch : <pre_user_wren_1> 
+INFO:Xst:2260 - The FF/Latch <pre_user_wren> in Unit <xillybus_lite_0> is equivalent to the following FF/Latch : <pre_user_wren_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_1> 
+Replicating register audio/audio_dac to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+Processing Unit <xillydemo> :
+	Found 2-bit shift register for signal <smbus/SMBus_en>.
+Unit <xillydemo> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 165
+ Flip-Flops                                            : 165
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : xillydemo.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 6020
+#      GND                         : 23
+#      INV                         : 293
+#      LUT1                        : 283
+#      LUT2                        : 433
+#      LUT3                        : 680
+#      LUT4                        : 703
+#      LUT5                        : 615
+#      LUT6                        : 1144
+#      MUXCY                       : 1010
+#      MUXF7                       : 48
+#      VCC                         : 13
+#      XORCY                       : 775
+# FlipFlops/Latches                : 3928
+#      FD                          : 478
+#      FDC                         : 102
+#      FDCE                        : 39
+#      FDE                         : 1835
+#      FDP                         : 15
+#      FDPE                        : 2
+#      FDR                         : 451
+#      FDRE                        : 829
+#      FDS                         : 29
+#      FDSE                        : 148
+# RAMS                             : 119
+#      RAM32M                      : 12
+#      RAM32X1D                    : 6
+#      RAM32X1S                    : 40
+#      RAM64M                      : 36
+#      RAM64X1D                    : 16
+#      RAMB18E1                    : 9
+# Shift Registers                  : 5
+#      SRLC16E                     : 5
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 87
+#      IBUF                        : 7
+#      IOBUF                       : 57
+#      OBUF                        : 22
+#      OBUFT                       : 1
+# Others                           : 2
+#      PLLE2_ADV                   : 1
+#      PS7                         : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            3909  out of  106400     3%  
+ Number of Slice LUTs:                 4432  out of  53200     8%  
+    Number used as Logic:              4151  out of  53200     7%  
+    Number used as Memory:              281  out of  17400     1%  
+       Number used as RAM:              276
+       Number used as SRL:                5
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   6202
+   Number with an unused Flip Flop:    2293  out of   6202    36%  
+   Number with an unused LUT:          1770  out of   6202    28%  
+   Number of fully used LUT-FF pairs:  2139  out of   6202    34%  
+   Number of unique control sets:       325
+
+IO Utilization: 
+ Number of IOs:                         215
+ Number of bonded IOBs:                  88  out of    200    44%  
+    IOB Flip Flops/Latches:              19
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                5  out of    140     3%  
+    Number using Block RAM only:          5
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                          | Clock buffer(FF name)                                                                                                                       | Load  |
+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+-------+
+xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>| BUFG                                                                                                                                        | 3846  |
+clk_100                                                                               | BUFGP                                                                                                                                       | 3     |
+clk_100                                                                               | PLLE2_ADV:CLKOUT0                                                                                                                           | 204   |
+xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/m_axi_bready            | NONE(xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/screensaver_ins/BRAM_SINGLE_MACRO_inst/bram18_single_bl.bram18_single_bl)| 1     |
+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+Control Signal                                                                             | Buffer(FF name)                                                        | Load  |
+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+xillybus_ins/xillybus_core_ins/M_AXI_AWCACHE_w<0>(xillybus_ins/xillybus_core_ins/XST_GND:G)| NONE(xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/Mram_dma_address)| 12    |
+xillybus_ins/xillybus_core_ins/M_AXI_BREADY_w(xillybus_ins/xillybus_core_ins/XST_VCC:P)    | NONE(xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/Mram_dma_address)| 8     |
+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 11.708ns (Maximum Frequency: 85.413MHz)
+   Minimum input arrival time before clock: 2.621ns
+   Maximum output required time after clock: 2.712ns
+   Maximum combinational path delay: 0.865ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>'
+  Clock period: 4.116ns (frequency: 242.954MHz)
+  Total number of paths / destination ports: 133650 / 9175
+-------------------------------------------------------------------------
+Delay:               4.116ns (Levels of Logic = 8)
+  Source:            audio/record_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i (FF)
+  Destination:       xillybus_ins/xillybus_core_ins/unitw_6_ins/unitw_6_active (FF)
+  Source Clock:      xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1> rising
+  Destination Clock: xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1> rising
+
+  Data Path: audio/record_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i to xillybus_ins/xillybus_core_ins/unitw_6_ins/unitw_6_active
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.282   0.648  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i (empty)
+     end scope: 'audio/record_fifo:empty'
+     begin scope: 'xillybus_ins/xillybus_core_ins:user_r_audio_empty_w'
+     LUT3:I0->O            2   0.053   0.641  unitw_6_ins/unitw_6_submit_buffer11 (unitw_6_ins/unitw_6_submit_buffer1)
+     LUT5:I1->O            1   0.053   0.413  unitw_6_ins/unitw_6_submit_buffer2 (unitw_6_ins/unitw_6_submit_buffer3)
+     LUT6:I5->O            2   0.053   0.419  unitw_6_ins/unitw_6_submit_buffer5 (unitw_6_ins/unitw_6_submit_buffer6)
+     LUT6:I5->O           15   0.053   0.505  unitw_6_ins/unitw_6_submit_buffer6 (unitw_6_ins/unitw_6_submit_buffer)
+     LUT3:I2->O            1   0.053   0.413  unitw_6_ins/_n0451_inv_SW0 (N237)
+     LUT5:I4->O            1   0.053   0.413  unitw_6_ins/unitw_6_active_glue_set_SW0 (N331)
+     LUT6:I5->O            1   0.053   0.000  unitw_6_ins/unitw_6_active_glue_set (unitw_6_ins/unitw_6_active_glue_set)
+     FDR:D                     0.011          unitw_6_ins/unitw_6_active
+    ----------------------------------------
+    Total                      4.116ns (0.664ns logic, 3.452ns route)
+                                       (16.1% logic, 83.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100'
+  Clock period: 11.708ns (frequency: 85.413MHz)
+  Total number of paths / destination ports: 4028 / 453
+-------------------------------------------------------------------------
+Delay:               4.503ns (Levels of Logic = 4)
+  Source:            xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Destination:       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Source Clock:      clk_100 rising 2.6X
+  Destination Clock: clk_100 rising 2.6X
+
+  Data Path: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOBDO13    1   2.454   0.485  ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (DOUTB<32>)
+     end scope: 'xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr:DOUTB<32>'
+     end scope: 'xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo:dout[32]'
+     LUT4:I2->O            3   0.053   0.616  scan_ins/fifo_rd_en1 (fifo_rd_en_w)
+     begin scope: 'xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo:rd_en'
+     LUT3:I0->O            1   0.053   0.399  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en)
+     begin scope: 'xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr:ENB'
+     RAMB18E1:ENARDEN          0.443          ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    ----------------------------------------
+    Total                      4.503ns (3.003ns logic, 1.500ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>'
+  Total number of paths / destination ports: 1016 / 595
+-------------------------------------------------------------------------
+Offset:              2.621ns (Levels of Logic = 8)
+  Source:            xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:SAXIHP0WREADY (PAD)
+  Destination:       xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/send_state_FSM_FFd2 (FF)
+  Destination Clock: xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1> rising
+
+  Data Path: xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:SAXIHP0WREADY to xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/send_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:SAXIHP0WREADY      6   0.000   0.000  processing_system7_0/PS7_i (S_AXI_HP0_WREADY)
+     end scope: 'xillybus_ins/system_i/processing_system7_0:S_AXI_HP0_WREADY'
+     begin scope: 'xillybus_ins/system_i/axi_interconnect_0:M_AXI_WREADY<0>'
+     end scope: 'xillybus_ins/system_i/axi_interconnect_0:S_AXI_WREADY<0>'
+     begin scope: 'xillybus_ins/system_i/xillybus_0:m_axi_wready'
+     end scope: 'xillybus_ins/system_i/xillybus_0:xillybus_M_AXI_WREADY'
+     end scope: 'xillybus_ins/system_i:xillybus_M_AXI_WREADY'
+     begin scope: 'xillybus_ins/xillybus_core_ins:M_AXI_WREADY_w'
+     LUT4:I3->O           17   0.053   0.845  axi4_send_dma_ins/pseudo_fifo_rd1 (axi4_send_dma_ins/pseudo_fifo_rd)
+     LUT6:I0->O            4   0.053   0.505  axi4_send_dma_ins/pseudo_fifo_rd_GND_8_o_AND_79_o (axi4_send_dma_ins/pseudo_fifo_rd_GND_8_o_AND_79_o)
+     LUT5:I3->O            1   0.053   0.602  axi4_send_dma_ins/send_state_FSM_FFd2-In4_SW0 (N385)
+     LUT6:I3->O            1   0.053   0.000  axi4_send_dma_ins/send_state_FSM_FFd2-In4 (axi4_send_dma_ins/send_state_FSM_FFd2-In)
+     FDR:D                     0.011          axi4_send_dma_ins/send_state_FSM_FFd2
+    ----------------------------------------
+    Total                      2.621ns (0.669ns logic, 1.952ns route)
+                                       (25.5% logic, 74.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>'
+  Total number of paths / destination ports: 450 / 211
+-------------------------------------------------------------------------
+Offset:              2.712ns (Levels of Logic = 6)
+  Source:            xillybus_ins/system_i/xillybus_lite_0/xillybus_lite_0/S_AXI_RVALID (FF)
+  Destination:       xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0RVALID (PAD)
+  Source Clock:      xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1> rising
+
+  Data Path: xillybus_ins/system_i/xillybus_lite_0/xillybus_lite_0/S_AXI_RVALID to xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0RVALID
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.282   0.512  S_AXI_RVALID (S_AXI_RVALID)
+     end scope: 'xillybus_ins/system_i/xillybus_lite_0/xillybus_lite_0:S_AXI_RVALID'
+     end scope: 'xillybus_ins/system_i/xillybus_lite_0:S_AXI_RVALID'
+     begin scope: 'xillybus_ins/system_i/axi4lite_0:M_AXI_RVALID<2>'
+     LUT2:I0->O            1   0.053   0.635  axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[2].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/S_AXI_RVALID1 (axi4lite_0/mc_mp_rvalid<2>)
+     LUT6:I2->O            1   0.053   0.725  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/si_rvalid_SW0 (N12)
+     LUT5:I0->O            1   0.053   0.399  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/si_rvalid (DEBUG_SF_CB_RDATACONTROL<0>)
+     end scope: 'xillybus_ins/system_i/axi4lite_0:S_AXI_RVALID<0>'
+     begin scope: 'xillybus_ins/system_i/processing_system7_0:M_AXI_GP0_RVALID'
+    PS7:MAXIGP0RVALID          0.000          processing_system7_0/PS7_i
+    ----------------------------------------
+    Total                      2.712ns (0.441ns logic, 2.271ns route)
+                                       (16.3% logic, 83.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              0.681ns (Levels of Logic = 1)
+  Source:            xillybus_ins/vga_iob_ff<5> (FF)
+  Destination:       vga4_blue<3> (PAD)
+  Source Clock:      clk_100 rising 2.6X
+
+  Data Path: xillybus_ins/vga_iob_ff<5> to vga4_blue<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.282   0.399  xillybus_ins/vga_iob_ff<5> (vga4_blue_3_OBUF)
+     OBUF:I->O                 0.000          vga4_blue_3_OBUF (vga4_blue<3>)
+    ----------------------------------------
+    Total                      0.681ns (0.282ns logic, 0.399ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 240 / 184
+-------------------------------------------------------------------------
+Delay:               0.865ns (Levels of Logic = 3)
+  Source:            xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:EMIOGPIOTN55 (PAD)
+  Destination:       PS_GPIO<55> (PAD)
+
+  Data Path: xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:EMIOGPIOTN55 to PS_GPIO<55>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:EMIOGPIOTN55       1   0.000   0.399  processing_system7_0/PS7_i (processing_system7_0/gpio_out_t_n<55>)
+     INV:I->O              1   0.067   0.399  processing_system7_0/GPIO_T<55>1_INV_0 (GPIO_T<55>)
+     end scope: 'xillybus_ins/system_i/processing_system7_0:GPIO_T<55>'
+     IOBUF:T->IO               0.000          iobuf_0 (processing_system7_0_GPIO<55>)
+     end scope: 'xillybus_ins/system_i:processing_system7_0_GPIO<55>'
+    ----------------------------------------
+    Total                      0.865ns (0.067ns logic, 0.798ns route)
+                                       (7.7% logic, 92.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_100
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+clk_100                                                                               |    4.503|         |         |         |
+xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>|    2.945|         |         |         |
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+clk_100                                                                               |    1.054|         |         |         |
+xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>|    4.116|         |         |         |
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 37.00 secs
+Total CPU time to Xst completion: 36.13 secs
+ 
+--> 
+
+Total memory usage is 313960 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :   71 (   0 filtered)
+

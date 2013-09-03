@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\xillydemo.ncd
+OUTFILE=F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\xillydemo.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog
+LICENSE=WebPack
+USER_INFO=__0_0_0

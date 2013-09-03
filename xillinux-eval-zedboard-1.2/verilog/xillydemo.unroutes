@@ -1,0 +1,60 @@
+Release 14.6 - par P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Sep 03 21:15:26 2013
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 48 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram0/Mram_fifo_ram1_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram0/Mram_fifo_ram2_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram0/Mram_fifo_ram3_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram0/Mram_fifo_ram4_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram1/Mram_fifo_ram1_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram1/Mram_fifo_ram2_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram1/Mram_fifo_ram3_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram1/Mram_fifo_ram4_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram2/Mram_fifo_ram1_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram2/Mram_fifo_ram2_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram2/Mram_fifo_ram3_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram2/Mram_fifo_ram4_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram3/Mram_fifo_ram1_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram3/Mram_fifo_ram2_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram3/Mram_fifo_ram3_RAMD_O
+   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/xillybus_wr_fifo/ram3/Mram_fifo_ram4_RAMD_O
+   xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem1_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem2_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem3_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem4_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/msg_buf_ins/Mram_mem5_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets10_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets11_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets12_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets13_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets14_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets15_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets16_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets17_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets18_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets19_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets1_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets20_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets2_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets3_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets4_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets5_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets6_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets7_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets8_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_2_ins/Mram_unitr_2_offsets9_RAMD_O
+   xillybus_ins/xillybus_core_ins/unitr_4_ins/Mram_unitr_4_offsets1_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/unitr_4_ins/Mram_unitr_4_offsets2_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/unitr_5_ins/Mram_unitr_5_offsets1_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/unitr_5_ins/Mram_unitr_5_offsets2_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/unitr_6_ins/Mram_unitr_6_offsets1_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/unitr_7_ins/Mram_unitr_7_offsets1_RAMD_D1_O
+   xillybus_ins/xillybus_core_ins/unitr_7_ins/Mram_unitr_7_offsets2_RAMD_D1_O
+
+

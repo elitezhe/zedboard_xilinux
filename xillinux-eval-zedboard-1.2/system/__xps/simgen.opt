@@ -1,0 +1,1 @@
+ -p zynq -lang verilog$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X F:/ZedBoard/xillinux-eval-zedboard-1.2/xillinux-eval-zedboard-1.2/system/

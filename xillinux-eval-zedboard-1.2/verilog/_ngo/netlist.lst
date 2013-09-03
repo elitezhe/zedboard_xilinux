@@ -1,0 +1,15 @@
+F:\ZedBoard\xillinux-eval-zedboard-1.2\xillinux-eval-zedboard-1.2\verilog\xillydemo.ngc 1378213333
+../runonce/fifo_32x512.ngc 1378212710
+../runonce/fifo_8x2048.ngc 1378212913
+../cores/xillybus_core.ngc 1376567290
+../system/implementation/system.ngc 1378212467
+../system/implementation/system_xillybus_0_wrapper.ngc 1378212359
+../system/implementation/system_xillybus_lite_0_wrapper.ngc 1378212444
+../system/implementation/system_processing_system7_0_wrapper.ngc 1378212346
+../system/implementation/system_xillyvga_0_wrapper.ngc 1378212383
+../cores/xillyvga_core.ngc 1347926280
+../runonce/vga_fifo.ngc 1378213089
+../system/implementation/system_axi_interconnect_0_wrapper.ngc 1378212427
+../system/implementation/system_axi4lite_0_wrapper.ngc 1378212419
+../system/implementation/system_axi_interconnect_1_wrapper.ngc 1378212435
+OK
